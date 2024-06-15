@@ -7,7 +7,7 @@ from gymnasium import spaces
 from stable_baselines3 import PPO
 import env_ppo as env
 import numpy as np
-import randomcl
+import random
 import matplotlib.pyplot as plt
 import copy
 
@@ -97,8 +97,8 @@ plt.xlabel("Time")
 plt.ylabel("Reward")
 plt.title("Reward over time")
 plt.legend()
-plt.show()
 plt.savefig("reward.png")
+plt.show()
 
 ##plot metrics
 plt.figure(figsize=(12, 8))
@@ -133,8 +133,8 @@ plt.title("Disruptions over time")
 plt.legend()
 
 plt.tight_layout()
-plt.show()
 plt.savefig("metrics.png")
+plt.show()
 
 print("Testing done!")
 print("Total reward:", reward)
