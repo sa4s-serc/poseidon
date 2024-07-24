@@ -1,0 +1,12 @@
+Average delay for Criticality: 10093.166666666666
+Average delay for VSVBP: 10259.666666666664
+Average delay for Poseidon: 4431.749999999998
+Average delay for Neptune: 17247.899999999994
+Average inference time for Criticality: 0.9609689712524414
+Average inference time for VSVBP: 0.8401939868927002
+Average inference time for Poseidon: 0.7467367649078369
+Average inference time for Neptune: 20.818476676940918
+Average cost for Criticality: 12280
+Average cost for VSVBP: 12110
+Average cost for Poseidon: 20215
+Average cost for Neptune: 7530

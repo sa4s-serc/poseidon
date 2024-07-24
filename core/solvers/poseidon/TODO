@@ -1,0 +1,8 @@
+add appropiate asserts
+adding appropiate dependencies
+add documentation
+rename functions and variables to be more apt and short
+add type hinting
+implement Posidon base class and Agent class
+implement step func in community env
+cross check everything?
