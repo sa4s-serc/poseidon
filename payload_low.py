@@ -1,6 +1,3 @@
-from stable_baselines3 import A2C,PPO
-
-
 payload = {
         "with_db": False,
         "solver": {
@@ -11,16 +8,15 @@ payload = {
         "community": "community-test",
         "namespace": "namespace-test",
         "node_names": [
-            "node_a", "node_b", "node_c", "node_d", "node_e", "node_f"
+            "node_a", "node_b", "node_c", "node_d", "node_e"
         ],
-        "node_delay_matrix": [[0, 3, 2, 6, 4, 5],
-                              [3, 0, 4, 5, 10, 1],
-                              [2, 4, 0, 3, 2, 8],
-                              [6, 5, 3, 0, 2, 4],
-                              [4, 10, 2, 2, 0, 3],
-                              [5, 1, 8, 4, 3, 0]],
+        "node_delay_matrix": [[0, 3, 2, 6, 4],
+                              [3, 0, 4, 5, 10],
+                              [2, 4, 0, 3, 2],
+                              [6, 5, 3, 0, 2],
+                              [4, 10, 2, 2, 0]],
                              
-        "workload_on_source_matrix": [[100, 0, 0], [1, 0, 0],[100, 0, 0], [1, 0, 0]],
+        "workload_on_source_matrix": [[1,1,1,1,1], [1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1]],
         "node_memories": [
             100, 100, 200, 50, 500, 500
         ],
@@ -35,7 +31,7 @@ payload = {
             "ns/fn_1", "ns/fn_2", "ns/fn_3", "ns/fn_4"
         ],
         "function_memories": [
-            50, 10, 10, 10
+            50, 10,10,10
         ],
         "function_max_delays": [
             1000, 1000, 1000, 1000
@@ -51,7 +47,7 @@ payload = {
                 "node_c": True,
                 "node_d": True,
                 "node_e": True,
-                "node_f": True,
+                
             },
             "ns/fn_2": {
                 "node_a": True,
@@ -59,7 +55,7 @@ payload = {
                 "node_c": True,
                 "node_d": True,
                 "node_e": True,
-                "node_f": True,
+                
                 
             },
             "ns/fn_3": {
@@ -68,7 +64,7 @@ payload = {
                 "node_c": True,
                 "node_d": True,
                 "node_e": True,
-                "node_f": True,
+                
             },
             "ns/fn_4": {
                 "node_a": True,
@@ -76,12 +72,10 @@ payload = {
                 "node_c": True,
                 "node_d": True,
                 "node_e": True,
-                "node_f": True,
+                
             },
         "actual_gpu_allocations": {
         },
     }
     }
-
-
-Agent 
+    
